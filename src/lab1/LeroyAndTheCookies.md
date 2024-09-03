@@ -1,4 +1,4 @@
-# Leroy and the Cookies
+# Leroy and the Cookies (11am)
 
 Team members (edit these):
 

@@ -17,6 +17,6 @@ package lab1;
 
 public class OneIsZero {
     public static void main(String[] args) {
-
+        // Your code here.
     }
 }

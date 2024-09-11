@@ -20,9 +20,12 @@ public class FunctionPractice {
     }
 
     public static double totalDistance(int[] points) {
-        for (int i = 0; i < points.length; i+=2) {
-            System.out.println(points[i] + " " + points[i+1]);
+        double sum = 0;
+        for (int i = 0; i < points.length-2; i+=2) {
+            System.out.println(points[i] + " " + points[i+1] + " " + points[i+2] + " " + points[i+3]);
+            double dist = distance(points[i], points[i+1], points[i+2], points[i+3]);
+            sum += dist;
         }
-        return 0;
+        return sum;
     }
 }

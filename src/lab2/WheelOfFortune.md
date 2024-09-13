@@ -79,6 +79,8 @@ Now look at the countLetter function.
 
 - What does the variable `secretArray.length` correspond to?
 
+  __Answer__:
+
 - Explain what the line of code `if (secretArray[i] == letter)` does:
 
   __Answer__:

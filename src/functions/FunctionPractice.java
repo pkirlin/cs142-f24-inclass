@@ -9,10 +9,14 @@ public class FunctionPractice {
     }
 
     public static double totalDistance(int[] points) {
+        double sum = 0;
         for (int i = 0; i < points.length-2; i+=2) {
             System.out.println(points[i] + " " + points[i+1] + " " + points[i+2] + " " + points[i+3]);
+            double dist = distance(points[i], points[i+1], points[i+2], points[i+3]);
+            System.out.println("the distance is " + dist);
+            sum += dist;
         }
-        return 0;
+        return sum;
     }
 
     public static double distance(int x1, int y1, int x2, int y2) {

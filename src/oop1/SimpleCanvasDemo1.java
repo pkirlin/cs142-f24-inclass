@@ -11,7 +11,7 @@ public class SimpleCanvasDemo1 {
         // Instantiate a new SimpleCanvas object by calling a constructor.
         // This creates a new instance of the SimpleCanvas class, and assigns
         // that instance to the canvas variable.
-        canvas = new SimpleCanvas(400, 200, "My Canvas");
+        canvas = new SimpleCanvas(400, 600, "My Canvas");
 
         // Note that we could have done both lines together:
         // SimpleCanvas canvas = new SimpleCanvas(400, 200, "My Canvas");

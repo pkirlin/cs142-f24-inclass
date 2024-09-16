@@ -9,5 +9,8 @@ public class SimpleCanvasSquares {
         // a concentric square design similar to this:
         // https://www.artsy.net/artwork/frank-stella-gran-cairo-4
 
+        SimpleCanvas c = new SimpleCanvas(300,300);
+        c.show();
+
     }
 }

@@ -18,7 +18,20 @@ public class SimpleCanvasFades {
         // from black at the top to whatever color the user wants at the bottom.
 
         SimpleCanvas canv = new SimpleCanvas(256, 256);
+        for (int i = 0; i < 256; i++) {
+            Color mycolor = new Color(0, i, i);
+            canv.setPenColor(mycolor);
+            canv.drawLine(0, i, 256, i);
+        }
         canv.show();
+
+        SimpleCanvas canv2 = new SimpleCanvas(512, 512);
+        for (int i = 0; i < 512; i++) {
+            Color mycolor = new Color(0, 0, i/2);
+            canv2.setPenColor(mycolor);
+            canv2.drawLine(0, i, 512, i);
+        }
+        canv2.show();
 
     }
 }

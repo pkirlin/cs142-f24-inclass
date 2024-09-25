@@ -6,6 +6,7 @@ public class DogDemo {
         //fido.age = 3;
         fido.name = "Fido";
         fido.hasPointyEars = true;
+        fido.weight = 100;
         System.out.println("My dog is named " + fido.name);
         System.out.println("and his age is " + fido.age);
         Dog otherDog = new Dog();

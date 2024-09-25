@@ -4,9 +4,14 @@ public class Dog {
     String name;
     int age = 1;
     boolean hasPointyEars;
+    int weight;
 
     void bark() {
-        System.out.println(name + " says woof woof");
+        if (weight < 60) {
+            System.out.println(name + " says yip yip!");
+        } else {
+            System.out.println(name + " says woof woof");
+        }
     }
 
     public String toString() {

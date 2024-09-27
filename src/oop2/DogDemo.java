@@ -4,22 +4,25 @@ public class DogDemo {
     public static void main(String[] args) {
         Dog fido = new Dog();
         //fido.age = 3;
-        fido.name = "Fido";
-        fido.hasPointyEars = true;
-        fido.weight = 100;
-        System.out.println("My dog is named " + fido.name);
-        System.out.println("and his age is " + fido.age);
+        fido.setName("Fido");
+        fido.setHasPointyEars(true);
+        fido.setWeight(100);
+        System.out.println("My dog is named " + fido.getName());
+        System.out.println("and his age is " + fido.getAge());
         Dog otherDog = new Dog();
-        otherDog.name = "Toto";
-        otherDog.age = 5;
-        System.out.println("The other dog is named " + otherDog.name);
+        otherDog.setName("Toto");
+        otherDog.setAge(5);
+        System.out.println("The other dog is named " + otherDog.getName());
         Dog dog3 = fido;
-        System.out.println("Dog 3 is named " + dog3.name);
+        System.out.println("Dog 3 is named " + dog3.getName());
 
         fido.bark();
         otherDog.bark();
         dog3.bark();
 
         System.out.println(fido);
+
+        fido.chase(otherDog);
+        otherDog.chase(fido);
     }
 }

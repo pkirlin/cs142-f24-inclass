@@ -1,12 +1,48 @@
 package oop2;
 
 public class Dog {
-    String name;
-    int age = 1;
-    boolean hasPointyEars;
-    int weight;
+    private String name;
+    private int age = 1;
+    private boolean hasPointyEars;
+    private int weight;
 
-    void bark() {
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setHasPointyEars(boolean hasPointyEars) {
+        this.hasPointyEars = hasPointyEars;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public boolean hasPointyEars() {
+        return hasPointyEars;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setName(String newName) {
+        name = newName;
+    }
+
+    public void chase(Dog otherDog) {
+        System.out.println(name + " is chasing " + otherDog.name);
+    }
+
+    public void bark() {
         if (weight < 60) {
             System.out.println(name + " says yip yip!");
         } else {

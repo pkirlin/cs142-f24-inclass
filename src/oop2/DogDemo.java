@@ -17,6 +17,7 @@ public class DogDemo {
         myDog.bark();
         otherDog.bark();
         dog3.bark();
+        //Dog.bark();
 
         System.out.println(myDog); // automatically calls myDog.toString()
     }

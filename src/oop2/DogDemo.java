@@ -2,9 +2,11 @@ package oop2;
 
 public class DogDemo {
     public static void main(String[] args) {
-        Dog fido = new Dog();
+        Dog fido = new Dog(10);
+        System.out.println(fido);
         //fido.age = 3;
         fido.setName("Fido");
+        System.out.println(fido);
         fido.setHasPointyEars(true);
         fido.setWeight(100);
         System.out.println("My dog is named " + fido.getName());
@@ -20,6 +22,10 @@ public class DogDemo {
         otherDog.bark();
         dog3.bark();
 
+        fido.setEnergy(5);
+        System.out.println(fido);
+        System.out.println(otherDog);
+        fido.playFetch();
         System.out.println(fido);
 
         fido.chase(otherDog);

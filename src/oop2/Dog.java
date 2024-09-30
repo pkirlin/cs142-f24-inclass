@@ -5,6 +5,40 @@ public class Dog {
     private int age = 1;
     private boolean hasPointyEars;
     private int weight;
+    private int energy;
+
+    public Dog() {
+        age = 3;
+        hasPointyEars = false;
+        weight = 5;
+        energy = 5;
+    }
+
+    public Dog(int newEnergy) {
+        age = 3;
+        hasPointyEars = false;
+        weight = 5;
+        energy = newEnergy;
+    }
+
+    public void playFetch() {
+        if (energy > 0) {
+            System.out.println(name + " is playing fetch");
+            energy--;
+        } else {
+            System.out.println(name + " is too tired to play fetch");
+        }
+    }
+
+    public int getEnergy() {
+        return energy;
+    }
+
+    public void setEnergy(int newEnergy) {
+        if (newEnergy >= 0) {
+            energy = newEnergy;
+        }
+    }
 
     public String getName() {
         return name;
@@ -51,6 +85,6 @@ public class Dog {
     }
 
     public String toString() {
-        return name + " is the name of the dog.";
+        return name + " is the name of the dog and its energy is " + energy;
     }
 }

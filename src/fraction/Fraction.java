@@ -25,4 +25,11 @@ public class Fraction {
         Fraction answer = new Fraction(newNumer, newDenom);
         return answer;
     }
+
+    public Fraction add(Fraction otherFraction) {
+        int newNumer = numer * otherFraction.denom + denom * otherFraction.numer;
+        int newDenom = denom * otherFraction.denom;
+        Fraction answer = new Fraction(newNumer, newDenom);
+        return answer;
+    }
 }

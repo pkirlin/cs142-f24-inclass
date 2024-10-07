@@ -8,5 +8,6 @@ public class FractionDemo {
         System.out.println(f);
         System.out.println(f2);
         System.out.println(f2.multiply(f3));
+        System.out.println(f2.add(f3));
     }
 }

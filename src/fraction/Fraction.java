@@ -22,8 +22,15 @@ public class Fraction {
     public Fraction multiply(Fraction otherFraction) {
         int newNumer = numer * otherFraction.numer;
         int newDenom = denom * otherFraction.denom;
-        System.out.println("before reducing " + newNumer + " " + newDenom);
+        //System.out.println("before reducing " + newNumer + " " + newDenom);
         Fraction product = new Fraction(newNumer, newDenom);
         return product;
+    }
+
+    public Fraction add(Fraction otherFraction) {
+        int newNumer = numer * otherFraction.denom + denom * otherFraction.numer;
+        int newDenom = denom * otherFraction.denom;
+        Fraction sum = new Fraction(newNumer, newDenom);
+        return sum;
     }
 }

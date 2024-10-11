@@ -15,6 +15,7 @@ public class DogDemo {
         otherDog.setName("Toto");
         otherDog.setAge(5);
         System.out.println("The other dog is named " + otherDog.getName());
+        System.out.println(otherDog);
         Dog dog3 = fido;
         System.out.println("Dog 3 is named " + dog3.getName());
 

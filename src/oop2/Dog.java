@@ -7,11 +7,14 @@ public class Dog {
     private int weight;
     private int energy;
 
+    private static int totalNumberOfDogs = 0;
+
     public Dog() {
         age = 3;
         hasPointyEars = false;
         weight = 5;
         energy = 5;
+        totalNumberOfDogs++;
     }
 
     public Dog(int newEnergy) {
@@ -19,6 +22,7 @@ public class Dog {
         hasPointyEars = false;
         weight = 5;
         energy = newEnergy;
+        totalNumberOfDogs++;
     }
 
     public void playFetch() {
@@ -85,6 +89,7 @@ public class Dog {
     }
 
     public String toString() {
-        return name + " is the name of the dog and its energy is " + energy;
+        return name + " is the name of the dog and its energy is " + energy
+                + " and total dogs = " + totalNumberOfDogs;
     }
 }

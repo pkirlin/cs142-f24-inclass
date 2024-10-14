@@ -3,13 +3,16 @@ package oop2;
 public class DogDemo {
     public static void main(String[] args) {
         Dog myDog = new Dog("Lassie");
-        //myDog.setName("Fido");
+        myDog.setName("Fido");
         myDog.setAge(3);
         myDog.setBreed("Golden retriever");
+        System.out.println(myDog);
         System.out.println("My dog's name is " + myDog.getName());
         Dog otherDog = new Dog();
         otherDog.setName("Toto");
         otherDog.setAge(5);
+        System.out.println(otherDog);
+        System.out.println(myDog);
         System.out.println("The other dog's name is " + otherDog.getName());
         Dog dog3 = myDog;
         System.out.println("dog3's name is " + dog3.getName());
@@ -26,5 +29,7 @@ public class DogDemo {
 
         myDog.chase(otherDog);
         otherDog.chase(myDog);
+
+
     }
 }

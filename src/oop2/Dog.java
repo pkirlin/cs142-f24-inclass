@@ -7,13 +7,17 @@ public class Dog {
     private String breed;
     private int energy;
 
+    private static int totalNumberOfDogs = 0;
+
     public Dog() {
         energy = 3;
+        totalNumberOfDogs++;
     }
 
     public Dog(String newName) {
         name = newName;
         energy = 3;
+        totalNumberOfDogs++;
     }
 
     public void playFetch() {
@@ -65,7 +69,8 @@ public class Dog {
     }
 
     public String toString() {
-        return name + " is the name of the dog and its energy is " + energy;
+        return name + " is the name of the dog and its energy is " + energy
+                + " and total dogs is " + totalNumberOfDogs;
     }
 
     public void chase(Dog otherDog) {

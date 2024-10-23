@@ -9,7 +9,10 @@ public class Exercises2 {
     public static void main(String[] args) {
         ArrayList<String> dictionary = readWords();
         System.out.println("The dictionary has " + dictionary.size() + " words.");
-
+        //int index = linearSearch(dictionary, "catsdjfgu");
+        //System.out.println("index is " + index);
+        ArrayList<String> words = wordsContainingEveryVowel(dictionary);
+        System.out.println("here are the words containing all vowels " + words);
     }
 
     public static void reverseArrayList(ArrayList<Integer> list) {
@@ -49,11 +52,27 @@ public class Exercises2 {
      * Return the index a word is at, or -1 if the word isn't found.
      */
     public static int linearSearch(ArrayList<String> list, String lookingFor) {
-        return 0;
+        for (int i = 0; i < list.size(); i++) {
+            String currentString = list.get(i);
+            if (currentString.equals(lookingFor)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     public static ArrayList<String> wordsContainingEveryVowel(ArrayList<String> list) {
-        return null;
+        ArrayList<String> answer = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            String currentString = list.get(i);
+            if (currentString.contains("a") && currentString.contains("e") &&
+                    currentString.contains("i") && currentString.contains("o") &&
+                    currentString.contains("u")) {
+                //System.out.println("word that has all vowels: " + currentString);
+                answer.add(currentString);
+            }
+        }
+        return answer;
     }
 
     public static ArrayList<String> wordsContainingEveryVowelExactlyOnce(ArrayList<String> list) {

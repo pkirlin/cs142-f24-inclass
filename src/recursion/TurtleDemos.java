@@ -37,7 +37,7 @@ public class TurtleDemos {
             t.turnLeft(30);
             drawTree(t, size / 1.5);
             t.turnRight(60);
-            drawTree(t, size / 1.5);
+            //drawTree(t, size / 1.5);
             t.turnLeft(30);
             t.goBackward(size);
         }

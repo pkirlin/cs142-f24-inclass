@@ -3,6 +3,9 @@ package recursion;
 public class Recursion2 {
 
     public static void main(String[] args) {
+        //System.out.println(reverseRec("cat"));
+        weird(3);
+
         for (int i = 1; i <= 10; i++) {
             long factAnswer = fact(i);
             System.out.println("The factorial of " + i + " is " + factAnswer);
@@ -58,7 +61,17 @@ public class Recursion2 {
      * RECURSIVE CASE:
      */
     public static String reverseRec(String str) {
-        return ""; // remove this when you start coding
+
+        if (str.length() <= 1) {
+            return str;
+        }
+        else {
+            String s2 = str.substring(1);
+            String s3 = reverseRec(s2);
+            String s4 = s3 + str.charAt(0);
+            return s4;
+        }
+
     }
 
     /**

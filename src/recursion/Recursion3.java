@@ -25,6 +25,9 @@ public class Recursion3 {
             return list.get(leftIdx);
         } else {
             int smallerSum = sumOfArrayList(list, leftIdx + 1);
+            //leftIdx++;
+            //int smallerSum = sumOfArrayList(list, leftIdx);
+            //leftIdx--;
             return list.get(leftIdx) + smallerSum;
         }
     }

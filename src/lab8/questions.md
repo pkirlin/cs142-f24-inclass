@@ -1,4 +1,4 @@
-# Lab 7: Recursion
+# Lab 8: Recursion
 
 ## Partner names:
 

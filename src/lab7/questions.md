@@ -1,4 +1,4 @@
-# Snake
+# Lab 7: Snake
 
 Team members (edit these):
 1. Team member 1

@@ -12,5 +12,13 @@ public class DogDemo {
 
         System.out.println(fido);
         System.out.println(toto);
+
+        ShowDog fluffy = new ShowDog();
+        fluffy.setAge(5);
+        fluffy.setName("Fluffy");
+
+        System.out.println(fluffy);
+        fluffy.chase(toto);
+        fluffy.flip();
     }
 }

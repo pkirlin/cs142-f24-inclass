@@ -3,7 +3,7 @@ package inherit1;
 import java.awt.*;
 
 public class Parrot {
-    private int energy;
+    protected int energy;
     private Color color;
 
     public int getEnergy() {
@@ -34,7 +34,11 @@ public class Parrot {
         } else {
             System.out.println("The parrot is too tired to fly.");
         }
+    }
 
+    public void sleep() {
+        System.out.println("Parrot takes a nap.");
+        energy++;
     }
 
 }

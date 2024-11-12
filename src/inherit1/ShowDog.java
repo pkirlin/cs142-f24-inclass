@@ -6,4 +6,10 @@ public class ShowDog extends Dog {
     public void flip() {
         System.out.println(name + " does a backflip");
     }
+
+    public void speak() {
+        super.speak();
+        System.out.println(name + " says woof woof in French!");
+        super.speak();
+    }
 }

@@ -20,5 +20,8 @@ public class DogDemo {
         System.out.println(fluffy);
         fluffy.chase(toto);
         fluffy.flip();
+
+        toto.speak();
+        fluffy.speak();
     }
 }

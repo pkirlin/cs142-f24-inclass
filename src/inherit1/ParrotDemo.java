@@ -9,5 +9,12 @@ public class ParrotDemo {
         polly.setEnergy(3);
         polly.fly();
         polly.fly();
+
+        PetParrot tweety = new PetParrot();
+        tweety.setName("Tweety");
+        tweety.setEnergy(1);
+        tweety.talk();
+        tweety.sleep();
+        tweety.talk();
     }
 }

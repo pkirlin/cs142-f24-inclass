@@ -8,7 +8,7 @@ public class Fish {
     /**
      * The size of the fish (length of one side of the square picture of the fish).
      */
-    private final int size;
+    private int size;
 
     /**
      * Location of the fish on the canvas (x, y).

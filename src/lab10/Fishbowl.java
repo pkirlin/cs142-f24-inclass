@@ -10,12 +10,12 @@ public class Fishbowl {
     /**
      * This list stores all the fish in the fishbowl.
      */
-    private final ArrayList<Fish> fishes;
+    private ArrayList<Fish> fishes;
 
     /**
      * The canvas where we draw the fish.
      */
-    private final SimpleCanvas canvas;
+    private SimpleCanvas canvas;
 
     /**
      * Create a new fishbowl.  We add the number of fish according to the "numfish" parameter.

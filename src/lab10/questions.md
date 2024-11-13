@@ -249,20 +249,20 @@ If you see this, please continue, otherwise let me know.
 
 Lastly, we will make the ZigzagFish move differently. We need to make
 them move faster and change directions sporadically. There is a private
-method called changeDirection() in ZigzagFish that is commented out that
+method called pickNewDirection() in ZigzagFish that is commented out that
 gives you some hints on changing speedx and speedy to make the ZigzagFish
 move faster (it uses a wider range of random numbers). See if you can
 get this method to work (speedx and speedy are private in Fish, so you
-will need to add/change something in Fish). Then call changeDirection() in
+will need to add/change something in Fish). Then call pickNewDirection() in
 the ZigzagFish constructor.
 
-Finally, we need to override move() in ZigzagFish to call changeDirection()
+Finally, we need to override move() in ZigzagFish to call pickNewDirection()
 every so often. You can do this in a few ways: one way is to keep a counter
 variable and count the number of times move() has been called, and then
-call changeDirection() whenever that counter variable hits some number (you
+call pickNewDirection() whenever that counter variable hits some number (you
 can choose). This will make the ZigzagFish change direction at set intervals.
 Or, which I think is cooler: you can generate a random number inside move()
-and use this number to call changeDirection() randomly. For example, how
+and use this number to call pickNewDirection() randomly. For example, how
 could you make it so every time the ZigzagFish moves, there's a 10% chance it
 switches direction?
 

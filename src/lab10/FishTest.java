@@ -1,5 +1,7 @@
 package lab10;
 
+import java.util.*;
+
 public class FishTest {
     public static void main(String[] args) {
         testZigzagFish();

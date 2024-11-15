@@ -31,7 +31,7 @@ Run CarDemo.
 
 - Which car wins the race?
 
-__Your answer here__
+Car 2
 
 Write a class called Racecar that *extends* Car, that has the
 following behaviors:
@@ -52,7 +52,7 @@ Add one racecar to the CarDemo race.
 - Which car wins the race, and how far does this car travel
   in the 60-second race?
 
-__Your answer here__
+__car 3, travels 2.8 miles__
 
 Write a class called Clunker that *extends* Car, that has the
 following behaviors:

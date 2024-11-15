@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class PolymorphismDemo {
 
     public static void main(String[] args) {
-        testPolymorphism();
-        //dogpark();
+        //testPolymorphism();
+        dogpark();
     }
 
     public static void testPolymorphism() {
@@ -41,13 +41,16 @@ public class PolymorphismDemo {
 
         // try calling speakTwice:
         System.out.println("Calling speaktwice:");
-        //speakTwice(regularDog);
+        speakTwice(polymorphDog);
 
         // try creating a random dog:
         Dog d = createRandomDog();
         System.out.println("Is this a dog or a showdog?  We don't know ahead of time:");
-        //d.speak();
-        //d.dance();
+        d.speak();
+        if (d instanceof ShowDog) {
+            ShowDog d2 = (ShowDog)d;
+            d2.dance();
+        }
     }
 
     // This function takes a Dog object as a parameter, and so also will
@@ -89,7 +92,10 @@ public class PolymorphismDemo {
         ShowDog stuckUpDog = new ShowDog("Fluffy", 3);
 
         for (Dog d : listOfDogs) {
-            stuckUpDog.chase(d);
+            if (d instanceof ShowDog) {
+                d.chase(stuckUpDog);
+                stuckUpDog.chase(d);
+            }
         }
     }
 }

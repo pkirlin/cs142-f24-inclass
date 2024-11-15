@@ -18,8 +18,9 @@ public class Car {
      * Drive the car for one second of time.
      */
     public void drive() {
-        if (currentSpeed + 5 <= topSpeed)
+        if (currentSpeed + 5 <= topSpeed) {
             currentSpeed += 5;
+        }
 
         System.out.println("Driving regular car at " + currentSpeed + " mph.");
 

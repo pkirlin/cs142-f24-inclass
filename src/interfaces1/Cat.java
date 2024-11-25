@@ -15,4 +15,7 @@ public class Cat extends Pet
         return "Cat object: name=" + getName() + " age=" + getAge();
     }
 
+    public void drawOn(SimpleCanvas canvas, int locationX, int locationY) {
+        canvas.drawImage(locationX, locationY, "cat.png");
+    }
 };

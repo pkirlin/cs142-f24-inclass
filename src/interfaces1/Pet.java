@@ -1,11 +1,13 @@
 package interfaces1;
 
-public abstract class Pet {
+public abstract class Pet implements Drawable {
 
     private String name;
     private int age;
 
     public abstract void speak();
+
+    public abstract void drawOn(SimpleCanvas canvas, int locationX, int locationY);
 
     public Pet(String newName, int newAge) {
         System.out.println("Constructing a pet object.");

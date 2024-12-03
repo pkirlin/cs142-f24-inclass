@@ -1,6 +1,6 @@
 package interfaces1;
 
-public class Cat extends Pet
+public class Cat extends Pet implements Drawable
 {
     public Cat(String newName, int newAge) {
         super(newName, newAge);
@@ -15,4 +15,7 @@ public class Cat extends Pet
         return "Cat object: name=" + getName() + " age=" + getAge();
     }
 
+    public void drawOn(SimpleCanvas canvas, int locationX, int locationY) {
+        canvas.drawImage(locationX, locationY, "cat.png");
+    }
 };

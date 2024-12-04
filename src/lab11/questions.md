@@ -63,6 +63,13 @@ programs on your computer, within reason.  For instance,
 if you can, close everything besides IntelliJ and maybe
 your internet browser in case you need to look stuff up**.
 
+**VERY IMPORTANT NOTE:**  When you run the code to measure
+the running time of the algorithms in parts A, B, and C, use
+the DEBUG button rather than the RUN button in IntelliJ.
+If you use the Run button, IntelliJ will often optimize the
+code while it's running and your measurements will not be
+accurate.
+
 HOW DO COMPUTER SCIENTISTS MEASURE THE SPEED OF
 ALGORITHMS?  Because every person's computer is different,
 a section of code might run faster or slower on someone
